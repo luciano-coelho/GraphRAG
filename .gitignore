@@ -47,3 +47,11 @@ pytest_cache/
 
 # Docker
 *.pid
+
+# Ignora dados gerados pelo Neo4j
+data/
+*.db
+*.log
+*.bak
+*.lck
+

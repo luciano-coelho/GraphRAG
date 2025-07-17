@@ -2,6 +2,7 @@ import os
 import json
 from neo4j import GraphDatabase
 from dotenv import load_dotenv
+from pathlib import Path
 
 load_dotenv()
 
@@ -10,10 +11,14 @@ USER = os.getenv("NEO4J_USERNAME")
 PASSWORD = os.getenv("NEO4J_PASSWORD")
 driver = GraphDatabase.driver(URI, auth=(USER, PASSWORD))
 
-with open("data/customer.json", encoding="utf-8") as f:
+BASE_DIR = Path(__file__).resolve().parent
+CUSTOMER_PATH = BASE_DIR / "utils" / "customer.json"
+ASSETS_PATH = BASE_DIR / "utils" / "assets.json"
+
+with open(CUSTOMER_PATH, encoding="utf-8") as f:
     customer = json.load(f)
 
-with open("data/assets.json", encoding="utf-8") as f:
+with open(ASSETS_PATH, encoding="utf-8") as f:
     assets = json.load(f)
 
 def create_graph(tx):
@@ -42,7 +47,7 @@ def create_graph(tx):
 
     tx.run(query,
            **customer, 
-           assets_data=assets)  
+           assets_data=assets)
 
 with driver.session() as session:
     session.execute_write(create_graph)

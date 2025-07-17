@@ -1,0 +1,26 @@
+[
+  {
+    "nome": "Tesouro IPCA",
+    "tipo": "Renda Fixa",
+    "categoria": "Titulo Publico",
+    "risco": "Baixo",
+    "valor": 10000.00,
+    "data": "2024-03-01"
+  },
+  {
+    "nome": "Ações",
+    "tipo": "Renda Variavel",
+    "categoria": "Ações",
+    "risco": "Alto",
+    "valor": 15000.00,
+    "data": "2024-04-10"
+  },
+  {
+    "nome": "CDB",
+    "tipo": "Renda Fixa",
+    "categoria": "CDB",
+    "risco": "Baixo",
+    "valor": 8000.00,
+    "data": "2024-05-15"
+  }
+]
