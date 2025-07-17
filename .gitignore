@@ -1,0 +1,49 @@
+# Ambiente virtual
+venv/
+.env
+.env.*
+
+# __pycache__ e arquivos compilados
+__pycache__/
+*.py[cod]
+*.so
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Banco de dados local (caso use SQLite temporariamente)
+*.sqlite3
+
+# Neo4j volumes locais (caso configure futuramente)
+neo4j/data/
+neo4j/logs/
+neo4j/import/
+
+# IDEs
+.vscode/
+.idea/
+
+# Arquivos do Streamlit
+.frontend/
+.streamlit/
+
+# Arquivos de build
+dist/
+build/
+*.egg-info/
+
+# Testes
+coverage/
+htmlcov/
+.cache/
+pytest_cache/
+
+# Docker
+*.pid
