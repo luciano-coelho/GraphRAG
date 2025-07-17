@@ -1,0 +1,18 @@
+Quais clientes investiram em ativos e quais são os valores desses ativos?
+O cliente Luciano investiu em ativos? se sim, quais são os valores desses ativos?
+O cliente chamado Luciano investiu em algo?
+Que tipos de ativos o Luciano possui atualmente?
+Quais clientes possuem ativos cadastrados no sistema?
+Algum cliente investiu em ativos de renda variável?
+Liste os ativos e valores investidos de todos os clientes.
+Quem investiu em ativos de alto risco?
+Qual é o nome dos ativos que estão ligados a algum cliente?
+Quais tipos de ativos estão presentes nas carteiras dos clientes?
+Existe cliente com mais de um tipo de ativo?
+Clientes com perfil conservador investem em que tipo de ativo?
+Qual cliente tem maior número de ativos registrados?
+Existe algum cliente sem nenhum ativo?
+Quais são os valores investidos por todos os clientes agrupados por tipo de ativo?
+
+
+
