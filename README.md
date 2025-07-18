@@ -10,16 +10,15 @@ simple-graphrag/
 │   ├── graph_setup.py            # Criação do grafo com dados JSON
 │   ├── retriever.py              # Lógica principal de perguntas/respostas
 │   ├── utils/
-│   │   └── prompt.txt            # Prompt oficial usado no modo produção
-│   └── data/
+│       └── prompt.txt            # Prompt oficial usado no modo produção
 │       ├── customer.json         # Dados do cliente
 │       └── assets.json           # Dados de ativos
 ├── test/
 │   ├── retriever_test.py         # Runner de testes com perguntas
 │   ├── questions.txt             # Lista de perguntas de teste
-│   └── prompt_test.txt           # Prompt alternativo para testes
+│   └── prompt_test.txt           # Prompt para testes
 ├── front/
-│   └── app.py                    # Interface (ex: Streamlit)
+│   └── app.py                    # Interface web Streamlit
 ├── .env                          # Variáveis de ambiente
 ├── docker-compose.yml           # Infraestrutura local com Neo4j
 ├── requirements.txt             # Dependências do projeto
@@ -27,7 +26,7 @@ simple-graphrag/
 ### 1. Clone o projeto
 
 ```bash
-git clone https://github.com/seu-usuario/simple-graphrag.git
+git clone https://github.com/luciano-coelho/GraphRAG.git
 cd simple-graphrag
 ```
 
@@ -67,7 +66,8 @@ OLLAMA_MODEL=llama3
 ### 5. Suba o Neo4j com Docker
 
 ```bash
-docker compose up --build```
+docker compose up --build
+```
 
 ### 6. Popule o grafo com os dados de exemplo
 
@@ -90,7 +90,7 @@ Se quiser adicionar mais perguntas, edite o arquivo:
 test/questions.txt
 ```
 
-Ou, se quiser testar um prompt diferente, edite:
+Se quiser testar um prompt diferente, edite:
 
 ```text
 test/prompt_test.txt

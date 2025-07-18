@@ -4,12 +4,12 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from back.retriever import responder_pergunta
 
-st.title("GraphRAG - Chat")
+st.title("Pergunte sobre a carteira do cliente:")
 
 if "historico" not in st.session_state:
     st.session_state.historico = []
 
-pergunta = st.text_input("Digite sua pergunta sobre a carteira do cliente:", key="input")
+pergunta = st.text_input("Digite sua pergunta:", key="input")
 
 if st.button("Enviar Pergunta") and pergunta:
     with st.spinner("Consultando o grafo e gerando resposta..."):
